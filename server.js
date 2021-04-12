@@ -4,7 +4,7 @@ const app = express()
 const rowdy = require ('rowdy-logger')
 const routesReport = rowdy.begin(app)
 const patientRoutes = require('./routes/patientRoutes')
-const appointmentRoutes = require('./routes/appointmentRoutes')
+// const appointmentRoutes = require('./routes/appointmentRoutes')
 
 app.use(express.json())
 app.use(require('cors')())
@@ -16,4 +16,4 @@ app.listen(PORT, () => {
 })
 
 app.use('/patient',patientRoutes)
-app.use('/appointment',appointmentRoutes)
+// app.use('/appointment',appointmentRoutes)
