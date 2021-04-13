@@ -47,6 +47,7 @@ patientController.delete = async(req,res) => {
       res.json({ message: 'patient deleted'}) 
   } catch (error) {
       res.json({error})
+      
   }
 }
 
